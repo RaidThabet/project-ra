@@ -1,5 +1,5 @@
 import { StatusBar } from "expo-status-bar";
-import { Text, View } from "react-native";
+import {Button, Text, View} from "react-native";
 
 export default function App() {
   return (
@@ -24,8 +24,11 @@ export default function App() {
           app/index.tsx
         </Text>
       </Text>
+      <Button title={"test"} onPress={() => {
+        console.log("test");
+      }} />
 
-      <StatusBar style="dark" />
+      <StatusBar style="light" />
     </View>
   );
 }
